@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>App Landing Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Own Styles -->
+    <style type="text/css">
+    	h2 {
+    		font-size: 300%;
+    		font-weight: 400;
+    	}
+    	h3 {
+    		font-size: 200%;
+    	}
+	    #jumbotron {
+	    	background: url("https://images.unsplash.com/photo-1465173121987-373740a169b3?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
+	    	background-size: 100% 100%;
+	    	margin-top: 50px;
+	    }
+	    #content {
+	    	padding-top: 30px;
+	    }
+	    #cards {
+	    	margin-top: 60px;
+	    	margin-bottom: 60px;
+	    }
+	    .card-block {
+	    	margin-top: 15px;
+	    	margin-bottom: 15px;
+	    }
+	    #download {
+	    	background-color: lightblue;
+	    	padding-top: 60px;
+	    	padding-bottom: 60px;
+	    }
+	    #appIcon {
+	    	width: 250px;
+	    	height: auto;
+	    }
+	    #email {
+	    	width: 40%;
+	    	margin: 0 auto;
+	    }
+	    #emailInput {
+	    	margin-right: 5px;
+	    }
+		</style>
+  </head>
+  <body>
+  	<!-- Navbar -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="bootstrap.html">MyApp</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="bootstrap.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#download">Download The App</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email">
+		      <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+		      <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+		    </form>
+		  </div>
+		</nav>
+
+		<!-- Jumbotron -->
+
+		<div id="jumbotron" class="jumbotron jumbotron-fluid text-center">
+		  <div class="container">
+		    <h1 class="display-3">My Awesome App!</h1>
+		    <p class="lead">This is why YOU should download this fantastic app!</p>
+		    <hr>
+		    <p>Want to know more? Join our mailing list!</p>
+
+		  	<!-- Input email address -->
+				<div id="email" class="input-group">
+				  <span class="input-group-addon" id="basic-addon1">@</span>
+				  <input id="emailInput" type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon1">
+				  <button type="button" class="btn btn-primary">Sign up</button>
+				</div>
+
+				<br>
+
+				<!-- Photo Credit -->
+		    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@caroliniecavalli?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Carolinie Cavalli"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Carolinie Cavalli</span></a>
+		  </div>
+		</div>
+
+		<!-- Content -->
+
+	  <div id="content" class="container text-center">
+	  <h2>Why This App Is Awesome</h2>
+	  <p>Summary, once again, of your app's awesomeness</p>
+
+		  <div id="cards" class="card-deck">
+			  <div class="card">
+			    <img class="card-img-top" src="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?auto=format&fit=crop&w=806&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Card title</h4>
+			      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			      <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@yespanioly?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Yousef Espanioly"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Yousef Espanioly</span></a>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img class="card-img-top" src="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?auto=format&fit=crop&w=806&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Card title</h4>
+			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			      <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@yespanioly?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Yousef Espanioly"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Yousef Espanioly</span></a>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img class="card-img-top" src="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?auto=format&fit=crop&w=806&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Card title</h4>
+			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+			      <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@yespanioly?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Yousef Espanioly"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Yousef Espanioly</span></a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Download -->
+
+		<div id="download" class="container-fluid text-center">
+			<h3>Download the app!</h3>
+			<p>Really, why should I download this app??</p>
+			<a href="bootstrap.html"><img id="appIcon" src="http://www.pvhc.net/img86/memskglnsexwknikddwm.png"></a>
+		</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
